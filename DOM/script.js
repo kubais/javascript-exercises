@@ -27,3 +27,11 @@ const para2 = document.createElement('p');
 para2.textContent = 'ME TOO';
 
 div2.append(h1, para2);
+
+const btn = document.querySelector('#btn');
+btn.onclick = () => alert("Hello world");
+
+const btn2 = document.querySelector('#btn2');
+btn2.addEventListener('click', () => {
+    alert("Hello world");
+});

@@ -58,3 +58,11 @@ function alertFunction() {
   
   // METHOD 3
   btn3.addEventListener('click', alertFunction);
+
+  btn3.addEventListener('click', function (e) {
+    console.log(e.target);
+  });
+
+  btn3.addEventListener('click', function (e) {
+    e.target.style.background = 'blue';
+  });

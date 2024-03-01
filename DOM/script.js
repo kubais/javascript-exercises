@@ -35,3 +35,26 @@ const btn2 = document.querySelector('#btn2');
 btn2.addEventListener('click', () => {
     alert("Hello world");
 });
+
+btn.addEventListener('click', function (e) {
+    console.log(e);
+}); //function (e) is a callback from addEventListener
+
+// Using named functions
+
+// METHOD 1
+function alertFunction() {
+    alert("YAY! YOU DID IT!");
+  }
+
+// METHODS 2 & 3
+function alertFunction() {
+    alert("YAY! YOU DID IT!");
+  }
+  const btn3 = document.querySelector('#btn3')
+  
+  // METHOD 2
+  btn3.onclick = alertFunction;
+  
+  // METHOD 3
+  btn3.addEventListener('click', alertFunction);
